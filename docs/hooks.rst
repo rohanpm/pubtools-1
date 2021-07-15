@@ -60,7 +60,7 @@ some functions with ``@hookspec`` decorator.
         """Called after a kettle has been turned off."""
 
     # Add these hookspecs onto the plugin manager.
-    pm.add_hookspecs(sys.module['__name__'])
+    pm.add_hookspecs(sys.modules[__name__])
 
 Be aware that:
 
